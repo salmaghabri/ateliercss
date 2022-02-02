@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 3.2rem;
+    background-image: url(img/top_bg.png);
+
+}
+
+footer {
+    height: 7rem;
+    background-image: url(img/foot_bg.png);
+}
+
+ul {
+    padding: 0;
+    margin: 0%;
+    margin-bottom: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+ul li {
+    display: inline-block;
+    text-align: center;
+    flex-basis: 20%;
+
+}
+
+li a {
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    display: block;
+    color: white;
+    background-color: rgb(145, 48, 39);
+    height: 1.8rem;
+}
+
+a:hover {
+    background-color: black;
+    background-image: url("img/rings.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+
+.center>.grid-container {
+
+    display: grid;
+    /*grid-template-columns: repeat(auto-fill, minmax(207px, 1fr));*/
+    grid-template-columns: auto auto auto auto;
+    column-gap: 0.5rem;
+    row-gap: 0.25rem;
+
+
+}
+
+article a {
+    color: rgb(145, 48, 39);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#logo {
+
+    position: absolute;
+}
+
+
+article {
+    padding-right: 1rem;
+}
+
+.item7 {
+
+    justify-self: end;
+    align-self: end;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#titre {
+    color: rgb(145, 48, 39);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.item4,
+.item5 {
+    align-self: end;
+    padding: 0;
+}
+
+.center {
+    border: crimson solid 0rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+
+}
+
+.center>p {
+    text-align: center;
+    font-weight: bold;
+
+}
