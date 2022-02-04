@@ -20,7 +20,7 @@ ul {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -49,16 +49,22 @@ a:hover {
     background-position-x: right;
 }
 
-
+.photo{
+    position: relative;
+}
 .center>.grid-container {
+    
 
     display: grid;
-    /*grid-template-columns: repeat(auto-fill, minmax(207px, 1fr));*/
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, minmax(0,1fr));
     column-gap: 0.5rem;
     row-gap: 0.25rem;
 
 
+}
+
+.grid-container img{
+    max-width: 100%;
 }
 
 article a {
@@ -101,7 +107,6 @@ article {
 }
 
 .center {
-    border: crimson solid 0rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
